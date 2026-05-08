@@ -17,8 +17,9 @@ import {
 } from "./components";
 import { IoLogoGithub, IoLogoInstagram, IoLogoLinkedin } from "react-icons/io";
 import { timeline } from "./constant/timeline";
-import thumbMovielabs from "/public/images/movielabs.jpg";
-import thumbTwidd from "/public/images/twidd.png";
+import profileAndre from "./assets/images/andre.webp";
+import thumbMovielabs from "./assets/images/movielabs.jpg";
+import thumbTwidd from "./assets/images/twidd.png";
 
 const App = () => {
   return (
@@ -41,7 +42,7 @@ const App = () => {
               Andre Putera Pratama
             </Heading>
             <p>Frontend Developer | React - Next.js</p>
-            <Flex gap={2} mt={2}>
+            <Flex gap={2} mt={2} justify={{ base: "center", sm: "start" }}>
               <Link href="https://github.com/andrepp97" target="_blank">
                 <Button variant="ghost">
                   <IoLogoGithub size={20} />
@@ -76,7 +77,7 @@ const App = () => {
               overflow="hidden"
             >
               <img
-                src="/images/andre.webp"
+                src={profileAndre}
                 alt="Profile image"
                 width="100"
                 height="100"
