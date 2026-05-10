@@ -29,19 +29,24 @@ const App = () => {
         p={4}
         borderRadius="lg"
         textAlign="center"
-        css={{ backdropFilter: "blur(1rem)" }}
+        css={{ backdropFilter: "blur(12px)" }}
         bg={useColorModeValue("whiteAlpha.600", "whiteAlpha.200")}
       >
         Hello from Indonesia, I am a Frontend React Developer.
       </Box>
 
       <Section delay={0.1}>
-        <Box display={{ md: "flex" }}>
+        <Box
+          display="flex"
+          flexDirection={{ base: "column", sm: "row" }}
+          alignItems="center"
+          gap={4}
+        >
           <Box flexGrow={1}>
             <Heading as="h2" variant="page-title">
               Andre Putera Pratama
             </Heading>
-            <p>Frontend Developer | React - Next.js</p>
+            <p>Frontend Developer | React, Next.js, TypeScript</p>
             <Flex gap={2} mt={2} justify={{ base: "center", sm: "start" }}>
               <Link href="https://github.com/andrepp97" target="_blank">
                 <Button variant="ghost">
@@ -60,18 +65,13 @@ const App = () => {
               </Link>
             </Flex>
           </Box>
-          <Box
-            flexShrink={0}
-            mt={{ base: 4, md: 0 }}
-            ml={{ md: 6 }}
-            textAlign="center"
-          >
+          <Box flexShrink={0} textAlign="center">
             <Box
               borderColor="whiteAlpha.800"
-              borderWidth={2}
+              borderWidth={3}
               borderStyle="solid"
-              w="100px"
-              h="100px"
+              w="115px"
+              h="115px"
               display="inline-block"
               borderRadius="full"
               overflow="hidden"
@@ -79,30 +79,29 @@ const App = () => {
               <img
                 src={profileAndre}
                 alt="Profile image"
-                width="100"
-                height="100"
+                width="115"
+                height="115"
               />
             </Box>
           </Box>
         </Box>
       </Section>
 
-      <Section delay={0.3}>
+      <Section delay={0.2}>
         <Heading as="h3" variant="section-title">
           Profile
         </Heading>
         <Paragraph>
-          I am a Web Developer with a passion for Frontend Development. With 5
-          years of experience building and developing responsive and
-          user-friendly web applications. Proficient in modern technologies such
-          as HTML, CSS, and JavaScript, as well as frameworks like React and
-          Next.js. Possesses an adequate understanding of UI/UX and best
-          practices in frontend development. Experienced working collaboratively
-          in agile teams, and is detail-oriented with a focus on code quality.
+          Frontend Developer based in Jakarta with 5 years of experience
+          building and developing responsive and user-friendly web applications.
+          Proficient in modern frameworks such as React, Next.js, and Tailwind
+          CSS. Possesses a solid understanding of UI/UX and best practices in
+          frontend development, and is experienced in team collaboration using
+          Agile and Scrum methodologies.
         </Paragraph>
       </Section>
 
-      <Section delay={0.5}>
+      <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
           Timeline
         </Heading>
@@ -114,7 +113,7 @@ const App = () => {
         ))}
       </Section>
 
-      <Section delay={0.6}>
+      <Section delay={0.4}>
         <Heading as="h3" variant="section-title">
           Individual Projects
         </Heading>
@@ -126,8 +125,8 @@ const App = () => {
               title="Movielabs"
               thumbnail={thumbMovielabs}
             >
-              A movie database website built with Next.js, Vanilla CSS, Framer
-              Motion and The Movie Database (TMDb) API.
+              A movie database website built with Next.js, Framer Motion and The
+              Movie Database (TMDb) API.
             </GridItem>
           </Section>
           <Section>
