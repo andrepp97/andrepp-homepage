@@ -16,10 +16,8 @@ import {
   GridItem,
 } from "./components";
 import { IoLogoGithub, IoLogoInstagram, IoLogoLinkedin } from "react-icons/io";
-import { timeline } from "./constant/timeline";
+import { timeline, projects } from "./constants";
 import profileAndre from "./assets/images/andre.webp";
-import thumbMovielabs from "./assets/images/movielabs.jpg";
-import thumbTwidd from "./assets/images/twidd.png";
 
 const App = () => {
   return (
@@ -118,28 +116,18 @@ const App = () => {
           Individual Projects
         </Heading>
         <SimpleGrid columns={[1, 1, 2]} gap={6} mt={6}>
-          <Section>
-            <GridItem
-              id="movielabs"
-              href="https://movielabs.vercel.app/"
-              title="Movielabs"
-              thumbnail={thumbMovielabs}
-            >
-              A movie database website built with Next.js, Framer Motion and The
-              Movie Database (TMDb) API.
-            </GridItem>
-          </Section>
-          <Section>
-            <GridItem
-              id="twidd"
-              href="https://twidd.vercel.app/"
-              title="Twidd"
-              thumbnail={thumbTwidd}
-            >
-              A twitter-inspired website built with Next.js, Tailwind CSS and
-              Firebase.
-            </GridItem>
-          </Section>
+          {projects.map((project) => (
+            <Section key={project.id}>
+              <GridItem
+                id={project.id}
+                href={project.href}
+                title={project.title}
+                thumbnail={project.thumbnail}
+              >
+                {project.description}
+              </GridItem>
+            </Section>
+          ))}
         </SimpleGrid>
       </Section>
     </Container>

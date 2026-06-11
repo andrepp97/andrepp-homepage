@@ -7,8 +7,15 @@ export const GridItem = ({ children, href, title, thumbnail }) => (
       <img
         src={thumbnail}
         alt={title}
-        style={{ borderRadius: "6px" }}
         loading="lazy"
+        height={150}
+        width={150}
+        style={{
+          width: "100%",
+          objectFit: "cover",
+          borderRadius: "6px",
+          display: "block",
+        }}
       />
       <LinkOverlay href={href} target="_blank" rel="noopener noreferrer">
         <Text fontWeight="medium" my={2}>
