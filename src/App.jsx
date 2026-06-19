@@ -14,6 +14,7 @@ import {
   Paragraph,
   Section,
   GridItem,
+  SocialLinks,
 } from "./components";
 import { IoLogoGithub, IoLogoInstagram, IoLogoLinkedin } from "react-icons/io";
 import { timeline, projects } from "./constants";
@@ -45,23 +46,7 @@ const App = () => {
               Andre Putera Pratama
             </Heading>
             <p>Frontend Developer | React, Next.js, TypeScript</p>
-            <Flex gap={2} mt={2} justify={{ base: "center", sm: "start" }}>
-              <Link href="https://github.com/andrepp97" target="_blank">
-                <Button variant="ghost">
-                  <IoLogoGithub size={20} />
-                </Button>
-              </Link>
-              <Link href="https://instagram.com/andre_pp_" target="_blank">
-                <Button variant="ghost">
-                  <IoLogoInstagram size={20} />
-                </Button>
-              </Link>
-              <Link href="https://linkedin.com/in/andreputera" target="_blank">
-                <Button variant="ghost">
-                  <IoLogoLinkedin size={20} />
-                </Button>
-              </Link>
-            </Flex>
+            <SocialLinks />
           </Box>
           <Box flexShrink={0} textAlign="center">
             <Box
