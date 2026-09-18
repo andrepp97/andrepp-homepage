@@ -1,6 +1,6 @@
-import thumbMovielabs from "../assets/images/movielabs.jpg";
+import thumbMovielabs from "../assets/images/movielabs.webp";
 import thumbTwidd from "../assets/images/twidd.png";
-import thumbPokedex from "../assets/images/pokedex.png";
+import thumbTjermin from "../assets/images/tjermin.webp";
 
 export const timeline = [
   {
@@ -31,12 +31,12 @@ export const timeline = [
 
 export const projects = [
   {
-    id: "pokedex",
-    href: "https://pokedex-andrepp.vercel.app/",
-    title: "Pokédex",
-    thumbnail: thumbPokedex,
+    id: "tjermin-marketplace",
+    href: "https://tjermin-marketplace.andreputerap.workers.dev/",
+    title: "Tjermin Marketplace",
+    thumbnail: thumbTjermin,
     description:
-      "A simple Pokémon website built with React, TypeScript, Tailwind CSS and PokéAPI.",
+      "A marketplace website built with Next.js, Redux, Tanstack Query, Framer Motion, Tailwind CSS and Cloudflare Workers.",
   },
   {
     id: "movielabs",
