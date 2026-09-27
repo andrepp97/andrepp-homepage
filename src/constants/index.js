@@ -1,6 +1,7 @@
 import thumbMovielabs from "../assets/images/movielabs.webp";
 import thumbTwidd from "../assets/images/twidd.png";
 import thumbTjermin from "../assets/images/tjermin.webp";
+import thumbNawadata from "../assets/images/nawadata.webp";
 
 export const timeline = [
   {
@@ -53,5 +54,13 @@ export const projects = [
     thumbnail: thumbTwidd,
     description:
       "A twitter-inspired website built with Next.js, Tailwind CSS and Firebase.",
+  },
+  {
+    id: "nawadata",
+    href: "https://nawadata.com/",
+    title: "Nawa Data Solutions",
+    thumbnail: thumbNawadata,
+    description:
+      "An IT Consulting company website built with PHP CodeIgniter.",
   },
 ];

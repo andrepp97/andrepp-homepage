@@ -1,10 +1,7 @@
 import {
   Box,
-  Button,
   Container,
-  Flex,
   Heading,
-  Link,
   SimpleGrid,
   useColorModeValue,
 } from "@chakra-ui/react";
@@ -16,7 +13,6 @@ import {
   GridItem,
   SocialLinks,
 } from "./components";
-import { IoLogoGithub, IoLogoInstagram, IoLogoLinkedin } from "react-icons/io";
 import { timeline, projects } from "./constants";
 import profileAndre from "./assets/images/andre.webp";
 
